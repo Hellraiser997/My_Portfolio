@@ -9,8 +9,8 @@
 </head>
 <body>
     <header>
-        <nav>
-
+        <nav class="topnav">
+            <!--Navegação no topo da tela-->
             <a href="#sobre">Sobre</a>
             <a href="#hobbies">Hobbies</a>
             <a href="#contato">Contato</a>
@@ -19,23 +19,43 @@
     <main>
         <h1 class="cabecalho">Felipe Gomes</h1>
         <section id="sobre">
-
-            <p>Olá! Meu nome é Felipe, tenho 19 anos de idade e sou estudante de engenharia. Nasci em Curitiba, Paraná, e morei aqui desde sempre também. Há um tempo atrás adquiri um certo interesse pela programação, e tive a oportunidade de entrar no programa do Códigos do Amanhã, que já me ensinou bastante coisa! Pretendo continuar estudando e me aprimorando para ter uma oportunidade nesta área da programação.
+            <!--Título e pequeno texto sobre mim-->
+            <h1 class="titulosobre">SOBRE</h1>
+            <p class="textosobre">Olá! Meu nome é Felipe, tenho 19 anos de idade e sou estudante de engenharia. Nasci em Curitiba, Paraná, e morei aqui desde sempre também. Há um tempo atrás adquiri um certo interesse pela programação, e tive a oportunidade de entrar no programa do Códigos do Amanhã, que já me ensinou bastante coisa! Pretendo continuar estudando e me aprimorando para ter uma oportunidade nesta área da programação.
 
             </p>
         </section>
         <section id="hobbies">
-            <p>Eu gosto de tocar guitarra e bateria, além de desenhar. Também gosto de estudar e ler sobre coisas como carros, engenharia, programação ou línguas.</p>
+            <!--Título e pequeno texto sobre meus hobbies-->
+            <h1 class="titulohobbies">HOBBIES</h1>
+            <p class="textohobbies">Eu gosto de tocar guitarra e bateria, além de desenhar. Também gosto de estudar e ler sobre coisas como carros, engenharia, programação ou línguas.</p>
             <br>
-            <img src="./img/laferrari.png">
-            <img src="./img/mustang.png">
-            <img src="./img/599gtb.png"
+            <div class="images">
+                <img src="./img/laferrari.png">
+                <img src="./img/599gtb.png">
+            </div>
         </section>
 
     </main>
     <footer>
+        <!--Base do formulário-->
         <section id="contato">
-            <p></p>
+            <h1 class="titulocontato">CONTATO</h1>
+            <div class="formulario">
+                <form action="action_page.php">
+                    <!--Caixinha do primeiro nome-->
+                    <label for="pnome">Primeiro nome</label>
+                    <input type="text" id="pnome" placeholder="Seu nome...">
+                    <!--Caixinha do segundo nome-->
+                    <label for="sobnome">Sobrenome</label>
+                    <input type="text" id="sobnome" placeholder="Seu sobrenome...">
+                    <!--Caixinha do assunto-->
+                    <label for="assunto">Assunto</label>
+                    <textarea id="assunto" name="assunto" placeholder="Escreva algo..." style="height:200px"></textarea>
+                    <!--Botão de envio-->
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </section>
     </footer>
 </body>
