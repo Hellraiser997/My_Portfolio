@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: auto;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: #000;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 90px;
+    color: #F25C05;
+}
+
+p {
+    margin-left: 10%;
+    font-size: 100%;
+    padding-top: 20px;
+    padding-right: 30px;
+}
+
+img {
+    border-radius: 4px;
+    width: 300px;
+    height: 200px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: #000;
+}
+
+
+#sobre {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    background-color: white;
+}
+
+#hobbies {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height:300px;
+    background-color: white;
+
+}
+
+#contato {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height:300px;
+    background-color: #000;
+}
+
+button {
+    width: 80px;
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    flex-direction: row;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+a:hover {
+    color: #F25C05
+}
