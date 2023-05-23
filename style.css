@@ -18,9 +18,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    flex-wrap: nowrap;
     height: 10vh;
     background-color: #000;
+}
+
+
+@media screen and (max-width: 600px) {
+    .cabecalho {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        height: 10vh;
+        background-color: #000;
+    }
 }
 
 h1 {
@@ -32,17 +44,54 @@ h1 {
     color: #F25C05;
 }
 
-p {
+.titulosobre {
+    color: #000;
+}
+
+.titulohobbies {
+    color: #000;
+    padding-left: 10px;
+
+}
+
+.titulocontato {
+    color: white;
+}
+
+.textosobre {
     margin-left: 10%;
     font-size: 100%;
     padding-top: 20px;
     padding-right: 30px;
+    align-items: center;
+
+}
+
+@media screen and (max-width:600px) {
+    .textosobre {
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+}
+
+.textohobbies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid #000;
 }
 
 img {
     border-radius: 4px;
-    width: 300px;
-    height: 200px;
+    width: 260px;
+    height: 180px;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
 }
 
 header {
@@ -58,33 +107,72 @@ nav {
     align-items: center;
     width: 100%;
     height: 70px;
+    margin-inline: auto;
     background-color: #000;
+
 }
 
+/*Parte para responsividade da navegação*/
+@media screen and (max-width: 600px) {
+    .topnav {
+        justify-content: center;
+        display: block;
+        align-items: center;
+        float: none;
+        width: 100%;
+    }
+}
 
 #sobre {
     display: flex;
     justify-content: center;
     width: 100%;
     height: 300px;
-    background-color: white;
+    background-color: #FC8137;
+}
+
+/*Responsividade do sobre*/
+@media screen and (max-width:600px); {
+    #sobre {
+        height: 100%;
+        display: block;
+        align-items: center;
+        width: 100%;
+    }
 }
 
 #hobbies {
     display: flex;
     justify-content: center;
     width: 100%;
-    height:300px;
+    height: 400px;
     background-color: white;
+}
 
+@media screen and (max-width:600px); {
+    #hobbies {
+        height: 50%;
+        display: block;
+        align-items: center;
+        width: 100%;
+    }
 }
 
 #contato {
     display: flex;
     justify-content: center;
     width: 100%;
-    height:300px;
+    height:200px;
     background-color: #000;
+}
+
+@media screen and (max-width:600px); {
+    #contato {
+        height: 50%;
+        display: block;
+        align-items: center;
+        width: 100%;
+    }
 }
 
 button {
@@ -106,4 +194,30 @@ a {
 
 a:hover {
     color: #F25C05
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container {
+    border-radius 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
 }
